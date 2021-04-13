@@ -1,15 +1,30 @@
 
 body {
 font-family: 'Roboto', Helvetica, Arial, sans-serif;
-font-size: 18px;
+font-size: 16px;
+line-height: 1.667;
+text-align: justify;
+box-sizing: border-box;
+
 }
 
-/* Font size for all titles */
-.title {
-    font-size: 20px;
-    color:  #58544b;
-    font-weight: bold;
-}
+
+/* Start of  Container-grid */
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1 fr; 
+    grid-template-rows: 60px auto auto auto auto auto;
+    grid-template-areas: 
+   
+   " header "
+   " sec1"
+   " sec2"
+   " sec3"
+   " sec4"
+   " footer"
+   }
 
 /* Start of header, logo, menu */
 #logo{
@@ -20,11 +35,10 @@ font-size: 18px;
 
 #menu{
  width: 20px;    
- padding: 20px; 
+ padding: 20px 10px 10px 10px; 
  object-fit: cover;
 
 }
-
 
 #header1 {
     grid-area: header1;
@@ -39,8 +53,7 @@ font-size: 18px;
 
 
 header {
-    grid-area: header;
-    width: 100vw;
+    grid-area: header; 
     max-height: 60px;
     border: 1px solid l#F2F2F2;
     display: flex;
@@ -50,28 +63,33 @@ header {
 
 }
 
-/* End of header, logo, menu */
+/* End of header, logo, menu  */
+
+
+/* Start of sections and footer */
+[id*="section"] {
+    padding: 20px;
+}
 
 #section1 {
     grid-area: sec1;
     background-color: hsla(45, 86%, 65%, 0.2);
-    padding: 30px;
-    min-height: 200px;
+   
 }
+
 #section2 {
     grid-area: sec2;
-    min-height: 200px;
+    
 
 }
 #section3 {
     grid-area: sec3;
     background-color: hsla(45, 86%, 65%, 0.2);
-    min-height: 200px;
+    
 }
 #section4 {
     grid-area: sec4;
-    min-height: 200px;
-
+  
 }
 
 footer{
@@ -80,20 +98,50 @@ footer{
     min-height: 200px;
 
 }
+/* End of sections and footer */
+/* End of  Container-grid */
 
+/* Font size for all titles */
+.title {
+    font-size: 21px;
+    color:  #58544b;
+    font-weight: bold;
+    
+}
+/* Buttons Styles */
+button {
+    background-color: #f3cc59b3;
+    width: 100%;
+    padding: 12px;
+    border-radius: 2px;
+    border-color:  #f3cc59b3;;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+ /* Start of Sections style*/
 
-#container {
- display: grid;
- height: 100vh;
- grid-template-columns: 1 fr; 
- grid-template-rows: 60px auto auto auto auto auto;
- grid-template-areas: 
-
-" header "
-" sec1"
-" sec2"
-" sec3"
-" sec4"
-" footer"
+#section2 img {
+    display: block;
+    width: 200px;
+    height:200px;
+    margin: 0 auto;
+    object-fit:cover;
+    border-radius:50%;
+   
 }
 
+#section2 p,
+#section3 p{
+    text-align: center;  
+}
+
+
+ #section3 iframe{
+     width: 85vw;
+     height: 400px; 
+     display: block;
+     margin: 0 auto;
+ }
