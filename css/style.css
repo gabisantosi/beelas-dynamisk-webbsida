@@ -118,12 +118,31 @@ button {
   transition: all 0.15s ease;
 }
 /* Start of Sections style*/
+
 #section2 img {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
-  object-fit: cover;
-  border-radius: 50%;
+  margin: 20px;
+ 
+}
+
+div.container-img {
+    border:5px solid hsl(0, 0%, 100%);;
+   
+    margin-bottom: 30px;
+}
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.img-mission {
+  flex-basis: 0%;
+}
+
+.text-mission {
+    padding-right: 10px;
 }
 
 #section3 img,
@@ -141,10 +160,6 @@ button {
   text-align: center;
 }
 
-.credits {
-  font-size: 10px;
-}
-
 #section4 iframe {
   width: 85vw;
   height: 400px;
@@ -159,27 +174,21 @@ button {
   justify-content: center;
   align-items: center;
   margin: 20px 0 0 0;
-  
 }
 
 .icon-linkedin,
-.icon-instagram
- {
+.icon-instagram {
   padding: 10px;
   color: #58544b;
 }
 
 footer a,
 footer p {
-    color:#58544b;
-    text-decoration: none;
-    text-align: center;
-    
-}  
-.copyright {
-    margin: 20px 30px;
-    font-size: 15px;
-   
-   
+  color: #58544b;
+  text-decoration: none;
+  text-align: center;
 }
-
+.copyright {
+  margin: 20px 30px;
+  font-size: 15px;
+}
