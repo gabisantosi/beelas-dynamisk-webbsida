@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
@@ -14,17 +15,26 @@
 </head>
 
 <body>
+    <script src="js/myScript.js"></script>
     <div id="container">
         <header>
-            <div id="header1">
-                <a href="#"><img id="logo" src="css/pictures/beelalogo.jpeg" alt="beela logo"></a>
-            </div>
-            <div id="header2">
-                <h1><i>Beela</i></h1>
-            </div>
 
-            <div id="header3">
-                <img id="menu" src="css/pictures/menu2.png" alt="menu button">
+            <div class="topnav">
+
+                <a href="index.html"><img id="logo" src="css/pictures/beelalogo.jpeg"></a>
+
+
+                <div id="myLinks">
+                    <a href="#section1">Join us</a>
+                    <a href="#section2">What we offer</a>
+                    <a href="#section3">Stories and Insights</a>
+                    <a href="#section4">Education and development</a>
+                    <a href="#section5">Beela</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
 
         </header>
@@ -32,39 +42,41 @@
         <section id="section1">
             <h2>Empowering immigrant women into Tech.</h2>
 
-            <p>We are a support network aiming to empower the female, transgender, and non-binary immigrants in Sweden
-                break into the tech world.</p>
+            <p>We are a support network with the aim of empowering female, transgender, and non-binary immigrants to
+                start working with IT in Sweden.</p>
 
 
-            <p> Receive a share of our honey-newsletter and
-                have access to our exclusive content.</p>
-            <button>Join us</button>
+            <p> Join us and receive our exclusive content.</p>
+            <button>Sign up</button>
         </section>
 
         <section id="section2">
-           
+
             <h2 class="text-center">What we offer</h2>
             <div class="container-img">
-            <div class="img-mission">  
-            <img  src="css/pictures/inspire.png" alt="lamp, inspire icon"></div>  
-            <div class="text-mission text-center">
-            <p> Inspiration <br> Successful stories</p>
-        </div>
-    </div>
-    <div class="container-img">
-    <div class="img-mission"> 
-            <img  src="css/pictures/inform.png" alt="megaphone, communication icon" ></div>
-            <div class="text-mission text-center">
-            <p> Information <br> Courses and events</p>
-        </div>
-        </div>
-        <div class="container-img">
-            <div class="img-mission"> 
-            <img src="css/pictures/empower.png" alt="high 5, empower icon"></div>
-            <div class="text-mission text-center">
-            <p> Guidance <br> Mentoring and network</p>
-        </div>
-    </div>
+                <div>
+                    <img src="css/pictures/inspire.png" alt="lamp, inspire icon">
+                </div>
+                <div class="text-mission text-center">
+                    <p> <b>Inspiration </b><br> Successful stories</p>
+                </div>
+            </div>
+            <div class="container-img">
+                <div class="img-mission">
+                    <img src="css/pictures/inform.png" alt="megaphone, communication icon">
+                </div>
+                <div class="text-mission text-center">
+                    <p> <b>Information </b> <br> Courses and events</p>
+                </div>
+            </div>
+            <div class="container-img">
+                <div class="img-mission">
+                    <img src="css/pictures/empower.png" alt="high 5, empower icon">
+                </div>
+                <div class="text-mission text-center">
+                    <p> <b>Guidance</b> <br> Mentoring and network</p>
+                </div>
+            </div>
         </section>
 
         <section id="section3">
@@ -82,15 +94,20 @@
         <section id="section4">
             <!-- Embed content from linkedin  -->
             <h2 class="text-center">Education and development</h2>
-            <a href="http://" target="_blank" rel="noopener noreferrer"> <iframe
-                    src="https://www.linkedin.com/embed/feed/update/urn:li:share:6787295233559318528" height="659"
-                    width="504" frameborder="0" allowfullscreen="" title="Inbäddat inlägg" scrolling="no"></iframe></a>
 
+            <!-- Update link for change events -->
+            <div onclick="openWindow()" class="div-iframe">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6787295233559318528" height="659"
+                    width="504" frameborder="0" allowfullscreen="" title="Inbäddat inlägg" scrolling="no"></iframe>
+            </div>
             <br>
             <br>
-
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6787692659407413248" height="555"
-                width="504" frameborder="0" allowfullscreen="" scrolling="no" title="Inbäddat inlägg"></iframe>
+            <div onclick="openWindow()" class="div-iframe">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6787692659407413248" height="555"
+                    width="504" frameborder="0" allowfullscreen="" scrolling="no" title="Inbäddat inlägg"></iframe>
+            </div>
+            <br>
+            <br>
         </section>
 
         <section id="section5">
@@ -99,8 +116,8 @@
                 <br>
             <p> We understand the challenges of starting over in a new country and we want to help you. </p>
 
-            <p>Our main goal is to empower the female, transgender, and non-binary immigrants in Sweden break into the
-                technology industry by providing a support network and help with their career transition.</p>
+            <p>Our main goal is to empower female, transgender, and non-binary immigrants in Sweden to break into the
+            technology industry by providing a support network and help with their career transition.</p>
 
             <p> By doing this, we also aim to promote diversity and inclusion at the working enviroment.</p>
             <br>
@@ -113,7 +130,7 @@
 
             <img src="css/pictures/denise_queenbee.png" alt="Denise Muniz ">
             <p class="text-center"><i>Denise Muniz: Co-founder</i></p>
-            <p class="text-center">Denise is a Software developer graduated in Sweden. With 10+ experience in Business
+            <p class="text-center">Denise is a Software developer educated in Sweden. With 10+ experience in Business
                 Analytics, she succeeded a career transition after her relocation in 2019.</p>
 
         </section>
@@ -151,11 +168,12 @@
                 <a href="https://github.com/gabisantosi">About this website</a>
                 |
                 <a href="mailto:gabisantos.enf@gmail.com">Illustration by <a
-                    href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a>
-                from <a href="https://icons8.com/illustrations">Ouch!</a>
+                        href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a>
+                    from <a href="https://icons8.com/illustrations">Ouch!</a>
             </p>
 
         </footer>
     </div>
 </body>
+
 </html>
