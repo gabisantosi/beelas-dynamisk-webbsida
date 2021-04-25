@@ -28,6 +28,10 @@ h2 {
   font-weight: bold;
 }
 
+b {
+  color: var(--darkgrey);
+
+}
 
 
 /* Container-grid */
@@ -47,7 +51,8 @@ h2 {
 }
 
 [id*="section"] {
-  padding: 20px;
+  padding: 8%;
+ 
 }
 
 #section1 {
@@ -191,6 +196,16 @@ div.container-img {
 iframe {
   pointer-events: none;
 }
+
+#section5 a{
+  color: var(--darkgrey);
+}
+
+#section5 a:hover{
+  color: var(--yellow);
+}
+
+
 
 /* Footer Style*/
 .footer-social-icons {
