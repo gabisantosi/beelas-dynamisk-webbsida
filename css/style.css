@@ -30,7 +30,7 @@ h2 {
 
 
 
-/* Start of  Container-grid */
+/* Container-grid */
 #container {
   display: grid;
   height: 100vh;
@@ -78,9 +78,7 @@ footer {
   min-height: auto;
 }
 
-/* End of  Container-grid */
-
-/* Style the navigation menu */
+/* Style navigation menu */
 #logo {
   width: 50px;
   margin: 10px 20px 0;
@@ -140,7 +138,7 @@ button {
   cursor: pointer;
   transition: all 0.15s ease;
 }
-/* Start of Sections style*/
+/* Sections style*/
 
 #section2 img {
   width: 100px;
@@ -194,7 +192,7 @@ iframe {
   pointer-events: none;
 }
 
-/* Footer */
+/* Footer Style*/
 .footer-social-icons {
   display: flex;
   justify-content: center;
