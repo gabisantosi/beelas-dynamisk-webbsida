@@ -84,6 +84,12 @@ footer {
 }
 
 /* Style navigation menu */
+
+/* Hide large screen menu  */
+#topnav-large {
+  display: none;
+}
+
 #logo {
   width: 50px;
   margin: 10px 20px 0;
@@ -94,6 +100,12 @@ footer {
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
+#topnav-large {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 .topnav #myLinks {
   display: none;
 }
@@ -163,11 +175,10 @@ div.container-img {
 }
 
 .text-mission {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 #section3 img,
-#section4 img,
 #section5 img {
   display: block;
   width: 200px;
@@ -181,31 +192,20 @@ div.container-img {
   text-align: center;
 }
 
-#section4 iframe {
-  width: 85vw;
-  height: 400px;
+#section4 img {
   display: block;
   margin: 0 auto;
-  overflow: hidden;
+  width: 100%;
 }
 
-.div-iframe {
-  cursor: pointer;
-}
 
-iframe {
-  pointer-events: none;
-}
-
-#section5 a{
+[id*="section"] a{
   color: var(--darkgrey);
 }
 
-#section5 a:hover{
+[id*="section"]a:hover{
   color: var(--yellow);
 }
-
-
 
 /* Footer Style*/
 .footer-social-icons {
@@ -230,4 +230,15 @@ footer p {
 .copyright {
   margin: 20px 30px;
   font-size: 15px;
+}
+
+#topnav-large {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+.topnav,
+#sec1-mobile {
+  display: none;
+}
 }
