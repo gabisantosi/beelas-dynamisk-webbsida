@@ -117,9 +117,8 @@ h1 {
   font-weight: normal;
   font-size: 24px;
   color: var(--darkgrey);
-  margin: auto auto;
   padding-right: 65px;
-
+  
  
 }
 
@@ -127,6 +126,10 @@ h2 {
   font-size: 24px;
   color: var(--darkgrey);
   font-weight: bold;
+}
+
+h4 {
+   margin-top: 0;
 }
 
 b {
@@ -182,13 +185,6 @@ button {
 /* Sections style*/
 
 
-
-#section2 img {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
-}
-
 div.container-img {
   border: 5px solid var(--white);
   background-color: white;
@@ -196,13 +192,27 @@ div.container-img {
   border-radius: 5%;
   margin: 0 auto 30px auto;
   width: 300px;
+  height: auto; 
   text-align: center;
+  padding: 30px 20px;
 }
 
+
+
+.container-img p{
+  text-align: justify;
+
+}
+
+.container-img a {
+  border: 1px solid grey;
+  padding: 10px;
+}
 
 .text-mission {
   padding-right: 20px;
 }
+
 
 #section3 img,
 #section5 img {
@@ -222,10 +232,12 @@ div.container-img {
   display: block;
   margin: 0 auto;
   width: 100%;
+  max-width: 400px;
 }
 
- a{
+  a{
   color: var(--darkgrey);
+  text-decoration: none;
 }
 
 
@@ -276,8 +288,6 @@ footer p {
   overflow: hidden;
   
 }
-
-
 
 #mylinks2 a{
   width: auto;
