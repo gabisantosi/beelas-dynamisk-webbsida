@@ -2,20 +2,20 @@ body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.667;
+  width: 100vw;
   text-align: justify;
   overflow-x: hidden;
 }
 
 /* Color Scheme */
 :root {
-  --yellow: #f2d854cc;
   --white: white;
-  --pink: #FDF6D7;
   --lightgrey: #f2f2f2;
+  --lightyellow: #fdf6d7;
+  --yellow: #f2d854cc;
   --darkgrey: #58544b;
   --black: black;
 }
-
 
 /* Container-grid */
 #container {
@@ -35,8 +35,7 @@ body {
 }
 
 [id*="section"] {
-  padding: 1% 8% 8% 8%;
- 
+  padding: 1% 8% 3% 8% ;
 }
 
 #row {
@@ -45,17 +44,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 40px;
+  width: 97,5vw;
+  height: auto;
+
 }
 
 #row span {
   padding-left: 10px;
-  
 }
 
 #section1 {
   grid-area: sec1;
-  background-color: var(--pink);
+  background-color: var(--lightyellow);
+  height: auto;
 }
 
 #section2 {
@@ -69,7 +71,7 @@ body {
 
 #section4 {
   grid-area: sec4;
-  background-color: var(--yellow);
+  background-color: var(--lightgrey);
 }
 #section5 {
   grid-area: sec5;
@@ -77,10 +79,9 @@ body {
 
 footer {
   grid-area: footer;
-  background-color: var(--lightgrey);
+  background-color: var(--yellow);
   min-height: auto;
 }
-
 
 /* Base Style navigation menu */
 ul {
@@ -102,15 +103,14 @@ a:focus {
 .topnav {
   overflow: hidden;
   position: relative;
-  
 }
 
 .topnav a,
-.topnav-tablet a{
+.topnav-tablet a {
   display: flex;
   text-decoration: none;
   align-items: center;
-  color: var(--black)
+  color: var(--black);
 }
 
 h1 {
@@ -118,8 +118,6 @@ h1 {
   font-size: 24px;
   color: var(--darkgrey);
   padding-right: 65px;
-  
- 
 }
 
 h2 {
@@ -129,7 +127,7 @@ h2 {
 }
 
 h4 {
-   margin-top: 0;
+  margin-top: 0;
 }
 
 b {
@@ -141,7 +139,6 @@ b {
 .topnav #myLinks {
   display: none;
 }
-
 
 /* Style navigation menu links */
 .topnav #myLinks a {
@@ -164,11 +161,10 @@ b {
 }
 
 /* Add a grey background color on mouse-over */
-.topnav #myLinks a:hover{
-  background-color: var(--pink);
+.topnav #myLinks a:hover {
+  background-color: var(--lightyellow);
   color: var(--black);
 }
-
 
 /* Buttons Styles */
 button {
@@ -184,24 +180,20 @@ button {
 }
 /* Sections style*/
 
-
-div.container-img {
+.container-img {
   border: 5px solid var(--white);
   background-color: white;
   box-shadow: 5px 5px 5px darkgray;
   border-radius: 5%;
   margin: 0 auto 30px auto;
   width: 300px;
-  height: auto; 
+  height: auto;
   text-align: center;
   padding: 30px 20px;
 }
 
-
-
-.container-img p{
+.container-img p {
   text-align: justify;
-
 }
 
 .container-img a {
@@ -212,7 +204,6 @@ div.container-img {
 .text-mission {
   padding-right: 20px;
 }
-
 
 #section3 img,
 #section5 img {
@@ -235,12 +226,10 @@ div.container-img {
   max-width: 400px;
 }
 
-  a{
+a {
   color: var(--darkgrey);
   text-decoration: none;
 }
-
-
 
 /* Footer Style*/
 .footer-social-icons {
@@ -254,6 +243,7 @@ div.container-img {
 .icon-instagram {
   padding: 10px;
   color: var(--darkgrey);
+  
 }
 
 footer a,
@@ -268,94 +258,88 @@ footer p {
 }
 /* Hide tablet screen menu  */
 
-.topnav-tablet, 
+.topnav-tablet,
 #section1 img {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
-
-/* Header and Menu */
+  /* Header and Menu */
   .topnav,
-#sec1-mobile {
-  display: none;
-}
+  #sec1-mobile {
+    display: none;
+  }
 
-.topnav-tablet {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  
-}
+  .topnav-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    
+  }
 
-#mylinks2 a{
-  width: auto;
-  padding: 10px 30px;
-}
-
-
-#mylinks2 .subnav-content a{
-  width: auto;
-  padding:30px;
-}
-
- #mylinks2 .subnav-content a:hover {
-  background-color: var(--pink);
-  padding: 30px;
-}
+  #mylinks2 a {
+    width: auto;
+    padding: 10px 40px;
+  }
 
 
-li.subnav {
-  display: inline-block;
-}
 
-.subnav:hover .subnav-content {
+  #mylinks2 .subnav-content a {
+    width: auto;
+    padding: 30px;
+  }
+
+  #mylinks2 .subnav-content a:hover {
+    background-color: var(--lightyellow);
+    padding: 30px;
+  }
+
+  li.subnav {
+    display: inline-block;
+  }
+
+  .subnav:hover .subnav-content {
     display: block;
     overflow: hidden;
-  
-}
+  }
 
-.subnav-content {
-  display: none;
-  position: absolute;
-  background-color: var(--white);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-/* .subnav-content a {
-  color: var(--black);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-} */
+  /* Section 1 tablet */
 
-
-
-/* Section 1 tablet */
-
-#section1 {
-  background-color: var(--white);
-}
-
-#section1 img{
-  display: block;
-
-
-}
-
-#section1 img {
+  #section1 {
+    background-color: var(--white);
+    height: 350px;
     width: 100%;
+    padding: 0;
+  }
+
+  #section1 img {
+    display: block;
+    width: 100%;
+    max-height: 350px;
     background-size: cover;
     object-fit: cover;
-    max-height: 200px; 
-    margin: 0 auto;
     position: relative;
     text-align: center;
     overflow: hidden;
+  }
+
+  .card {
+    float: left;
+    width: 50%;
+  }
+  .container-img {
+    width: 500px;
+    margin: 0 auto 60px auto;
 
 }
-
 }
