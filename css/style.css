@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 30px;
   width: 97,5vw;
   height: auto;
 
@@ -281,9 +281,12 @@ footer p {
 
   #mylinks2 a {
     width: auto;
-    padding: 10px 40px;
+  
   }
 
+  #mylinks2 a:last-child {
+    padding-right: 30px;
+  }
 
 
   #mylinks2 .subnav-content a {
