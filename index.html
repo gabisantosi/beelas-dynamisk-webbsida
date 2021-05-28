@@ -34,8 +34,9 @@
 
                 </ul>
             </div>
+            
             <!-- Mobile Menu Colapsed button -->
-            <div class="topnav">
+            <div id="topnav">
 
                 <a href="index.html"><img id="logo" src="css/pictures/beelalogo.jpeg" alt="logo"><span>Beela</span></a>
 
@@ -52,11 +53,10 @@
                     <i class="fa fa-bars"></i>
                 </a>
 
-
             </div>
 
             <!-- Tablet menu -->
-            <div class="topnav-tablet">
+            <div id="topnav-tablet">
 
                 <a href="index.html"><img id="logo" src="css/pictures/beelalogo.jpeg"><span>Beela</span></a>
 
@@ -71,8 +71,6 @@
                     </ul>
                 </div>
             </div>
-
-
         </header>
 
         <section id="section1">
@@ -88,8 +86,6 @@
                 <a href=""><button>Join us</button></a>
             </div>
 
-
-
             <img src="css/pictures/main-beela.jpg" alt="">
 
         </section>
@@ -97,13 +93,13 @@
         <section id="section2">
 
             <h2 class="text-center">Programmes</h2>
-            <div class="container-img">
+           
+         <div id="sec2-container">
+            <div class="container-img" id="container.img1">
                 <span style="font-size: 30px" class="fa fa-microphone"></span>
                 <h4>Beelas Talk</h4>
-                <p>A seasonal podcast with amazing guests who share their inspiring stories of diversity, equity and
+                <p>A seasonal podcast with inspiring stories of diversity and
                     inclusion in the tech industry.</p>
-                <br>
-
                 <a href="#">Listen</a>
             </div>
 
@@ -111,49 +107,51 @@
             <div class="container-img">
                 <span class="fa fa-rocket" style="font-size: 30px"></span>
                 <h4>Mentoring</h4>
-                <p>We match immigrant women in a career transition with established women in the tech industry to
-                    provide mentorship, career coaching, and support.</p>
+                <p>We match you with top leaders in the tech industry for career coaching and support.</p>
                 <a href="mentoring.html">Read More</a>
 
 
             </div>
 
-
             <div class="container-img">
                 <span class="fa fa-envelope-square" style="font-size: 30px"></span>
                 <h4>Newsletter</h4>
-                <p>Bi-weekly newsletter with tips for a career transition into tech. Monthly calendar advertising
-                    courses, bootcamps, and events for beginners.</p>
-                <br>
+                <p>Bi-weekly newsletter with tips and advice for a career transition into tech. </p>
+                
                 <a href=" https://beela.us1.list-manage.com/subscribe/post?u=ec3f144b4e769635dffef5601&amp;id=92a05c0895"
-                    target="_blank">Sign up</a>
+                    target="_blank">Sign in</a>
             </div>
 
             <div class="container-img">
                 <span class="fa fa-users" style="font-size: 30px"></span>
-                <h4>Events</h4>
-                <p>Workshops and talks where we invite guest speakers to share their talents & experience with our
-                    community. Check our events on our Linkedin posts.</p>
+                <h4>Workshops</h4>
+                <p>We invite guest speakers to share their talents & experience with our community.</p>
 
 
-                <a href="https://www.linkedin.com/company/beela-se/" target="_blank">Search</a>
+                <a href="https://www.linkedin.com/company/beela-se/" target="_blank">Join</a>
 
             </div>
-
-
+        </div>
 
         </section>
 
         <section id="section3">
-            <h2 class="text-center">Stories and Insights</h2>
-
-            <img src="css/pictures/inspirational1.jpg" alt="Photo of a Terese Dev, frontend developer">
-            <p class="text-center">Joanna is from Switzerland and now works as a frontend developer</p>
-            <img src="css/pictures/inspirational4.jpg" alt="Photo of a Maria Dev, fullstack developer">
-            <p class="text-center">Maria is from USA and now works as a fullstack developer</p>
-            <img src="css/pictures/inspirational6.jpg" alt="Photo of a Nur Dev, UX designer">
-            <p class="text-center">Nur is from Malaysia and now works as a UX designer</p>
-
+            
+                <h2 class="text-center">Stories and Insights</h2>
+            <div id="sec3-container"> 
+                <div class="story">
+                     <img src="css/pictures/inspirational1.jpg" alt="Photo of a Terese Dev, frontend developer">
+                    <p class="text-center">Joanna is from Switzerland and now works as a frontend developer</p>
+                </div>
+                <div class="story">
+                    <img src="css/pictures/inspirational4.jpg" alt="Photo of a Maria Dev, fullstack developer">
+                    <p class="text-center">Maria is from USA and now works as a fullstack developer</p>
+                </div>
+                <div class="story">
+                    <img src="css/pictures/inspirational6.jpg" alt="Photo of a Nur Dev, UX designer">
+                     <p class="text-center">Nur is from Malaysia and now works as a UX designer</p>
+                </div>     
+            </div> 
         </section>
 
         <section id="section4">
@@ -171,89 +169,86 @@
 
         <section id="section5">
             <h2>Beela</h2>
-            <p> Welcome to our beehive!</section< /p>
+            <p> Welcome to our beehive!</section</p>
                 <br>
             <p> We understand the challenges of starting over in a new country and we want to help you. </p>
 
-            <p>Our main goal is to empower female, transgender, and non-binary immigrants in Sweden to break into the
-                technology industry by providing a support network and help with their career transition.</p>
+            <p>Our main goal is to empower female, transgender, and non-binary immigrants in Sweden to break into the technology industry by providing a support network and help with their career transition.</p>
 
             <p> By doing this, we also aim to increase diversity and inclusion at the working enviroment.</p>
+            
             <br>
+            
             <h2 class="text-center">The Queen Bees</h2>
-            <div class="card">
-                <a href="https://se.linkedin.com/in/jularase"><img src="css/pictures/juliana_queenbee.png"
-                        alt="Juliana Araújo">
-
-                    <p class="text-center">Juliana Araújo
-                </a><br> Founder</p>
-                <div>
-                    <p class="text-center">Juliana is a Product Leader over 10+ experience in tech leading data and
-                        product
-                        teams. Shes's been living in Sweden since 2018.</p>
+            <div id="sec5-container"> 
+                <div class="card">
+                   <!-- <a href="https://se.linkedin.com/in/jularase"></a>  -->  
+                    <img src="css/pictures/juliana_queenbee.png" alt="Juliana Araújo">
+                    <p class="text-center">Juliana Araújo - Founder</p>
+                    <p>Juliana is a Product Leader over 10+ experience in tech leading data and product teams. Shes's been living in Sweden since 2018.</p>
                 </div>
-            </div>
-            <div class="card">
-                <a href="https://se.linkedin.com/in/deniseamuniz"><img src="css/pictures/denise_queenbee.png"
-                        alt="Denise Muniz ">
+           
 
-                    <div>
-                        <p class="text-center">Denise Muniz
-                </a> <br> Co-founder</p>
-                <p class="text-center">Denise is a Software developer educated in Sweden. With 10+ experience in
-                    Business
-                    Analytics, she succeeded a career transition after her relocation in 2019.</p>
+       
+                <div class="card">
+                    <!-- <a href="https://se.linkedin.com/in/deniseamuniz"></a> -->
+                    <img src="css/pictures/denise_queenbee.png"alt="Denise Muniz"> 
+                   
+                    <p class="text-center">Denise Muniz - Co-founder</p>
+                    <p>Denise is a Software developer educated in Sweden. With 10+ experience in Business Analytics, she succeeded a career transition after her relocation in 2019.</p>
                 </div>
              </div>
+       
 
-
-    </section>
+         </section>
 
     <footer id="footer">
-        <div class="footer-social-icons">
+            <div class="footer-social-icons">
 
-            <!-- Likedin -->
-            <a href="https://www.linkedin.com/company/beela-se" class="icon-linkedin" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-linkedin">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                </svg></a>
+                <!-- Likedin -->
+                <a href="https://www.linkedin.com/company/beela-se" class="icon-linkedin" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
 
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/beela.se/" class="icon-instagram" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-instagram">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg></a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/beela.se/" class="icon-instagram" target="_blank"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
 
-            <!-- Facebook -->
-            <!-- <a href="https://www.facebook.com/beela" class="icon-facebook-rect" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a> -->
-        </div>
+                <!-- Facebook -->
+                <!-- <a href="https://www.facebook.com/beela" class="icon-facebook-rect" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a> -->
+            </div>
 
-        <div class="copyright text-center">
-            <a href="" target="_blank">Careers</a>
-            <br>
-            <a href="">Contact us</a>
-            <p>Copyright © 2021 - Beela
-                | <br>
+            <div class="copyright text-center">
+                <a href="" target="_blank">Careers</a>
+                <br>
+                <a href="">Contact us</a>
+                <p>Copyright © 2021 - Beela
+                    | <br>
 
-                <a href="https://github.com/gabisantosi">About this website</a>
-                |
-                <a href="mailto:gabisantos.enf@gmail.com">Illustration by <a
-                        href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a>
-                    from <a href="https://icons8.com/illustrations">Ouch!</a>
-            </p>
-        </div>
-    </footer>
+                    <a href="https://github.com/gabisantosi">About this website</a>
+                    |
+                    <a href="mailto:gabisantos.enf@gmail.com">Illustration by <a
+                            href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a>
+                        from <a href="https://icons8.com/illustrations">Ouch!</a>
+                </p>
+            </div>
+        </footer>
     </div>
+    
     <!-- Custom JS -->
     <script src="js/myScript.js"></script>
+
 </body>
 
 </html>

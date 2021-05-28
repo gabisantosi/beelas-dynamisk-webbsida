@@ -21,17 +21,18 @@ body {
 #container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1 fr;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (9, auto); 
   grid-template-areas:
     "row"
-    " header"
-    " sec1"
-    " sec2"
-    " sec3"
-    " sec4"
-    " sec5"
-    " footer";
+    "top1"
+    "top2"
+    "sec1"
+    "sec2"
+    "sec3"
+    "sec4"
+    "sec5"
+    "footer";
 }
 
 [id*="section"] {
@@ -52,6 +53,18 @@ body {
 
 #row span {
   padding-left: 10px;
+}
+
+
+#topnav {
+  grid-area: top1;
+  overflow: hidden;
+  position: relative;
+  height: 60px;
+}
+
+#topnav-tablet {
+  grid-area: top2;
 }
 
 #section1 {
@@ -100,14 +113,9 @@ a:focus {
   margin: 5px 0 10px 20px;
 }
 
-.topnav {
-  overflow: hidden;
-  position: relative;
-  height: 60px;
-}
 
-.topnav a,
-.topnav-tablet a {
+#topnav a,
+#topnav-tablet a {
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -137,12 +145,12 @@ b {
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 
-.topnav #myLinks {
+#topnav #myLinks {
   display: none;
 }
 
 /* Style navigation menu links */
-.topnav #myLinks a {
+#topnav #myLinks a {
   color: var(--black);
   padding: 14px 16px;
   text-decoration: none;
@@ -150,7 +158,7 @@ b {
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+#topnav a.icon {
   background: var(--white);
   color: var(--black);
   border-left: 1px solid var(--lightgrey);
@@ -162,7 +170,7 @@ b {
 }
 
 /* Add a grey background color on mouse-over */
-.topnav #myLinks a:hover {
+#topnav #myLinks a:hover {
   background-color: var(--lightyellow);
   color: var(--black);
 }
@@ -216,6 +224,13 @@ button {
   border-radius: 50%;
 }
 
+#sec3-container p,
+#sec5-container p {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -259,19 +274,19 @@ footer p {
 }
 /* Hide tablet screen menu  */
 
-.topnav-tablet,
+#topnav-tablet,
 #section1 img {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px){
   /* Header and Menu */
-  .topnav,
+  #topnav,
   #sec1-mobile {
     display: none;
   }
 
-  .topnav-tablet {
+  #topnav-tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,12 +353,36 @@ footer p {
   }
 
   .card {
-    float: left;
     width: 50%;
   }
+
+  #sec5-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+  }
+
   .container-img {
     width: 500px;
     margin: 0 auto 60px auto;
 
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  /* Section2 */
+  #sec2-container,
+  #sec3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-img {
+    width: 200px; 
+    margin: 0 20px 0 0; 
+  }
+
+  
+
 }
