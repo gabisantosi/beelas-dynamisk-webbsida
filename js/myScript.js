@@ -1,14 +1,24 @@
-// Open linked-in post in another tab
-function openWindow() {
-    window.open("https://www.linkedin.com/company/beela-se", "_blank");
+//Open Hamburger menu  
+function myFunction() {
+  var menu = document.getElementById("myLinks");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
 }
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+//Slieshow
+const slideshowImages = document.querySelectorAll(".intro .slideshow-img");
+
+const time = 5000;
+let currentImageCounter = 0;
+
+slideshowImages[currentImageCounter].style.display = "block";
+
+setInterval(nextImage, time);
+  function nextImage() {
+  slideshowImages[currentImageCounter ].style.display = "none";
+  currentImageCounter  = (currentImageCounter  + 1)  % slideshowImages.length;
+   slideshowImages [currentImageCounter ].style.display = "block";
 }

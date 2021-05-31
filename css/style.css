@@ -22,11 +22,11 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat (9, auto); 
+  grid-template-rows: auto; 
   grid-template-areas:
     "row"
-    "top1"
-    "top2"
+    "topnav1"
+    "topnav2"
     "sec1"
     "sec2"
     "sec3"
@@ -60,7 +60,7 @@ body {
   grid-area: top1;
   overflow: hidden;
   position: relative;
-  height: 60px;
+ 
 }
 
 #topnav-tablet {
@@ -169,7 +169,7 @@ b {
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add background color on mouse-over */
 #topnav #myLinks a:hover {
   background-color: var(--lightyellow);
   color: var(--black);
@@ -187,6 +187,8 @@ button {
   cursor: pointer;
   transition: all 0.15s ease;
 }
+
+
 /* Sections style*/
 
 .container-img {
@@ -275,8 +277,8 @@ footer p {
 /* Hide tablet screen menu  */
 
 #topnav-tablet,
-#section1 img {
-  display: none;
+.intro{
+  display:none;
 }
 
 @media screen and (min-width: 600px){
@@ -285,6 +287,53 @@ footer p {
   #sec1-mobile {
     display: none;
   }
+
+  .intro {
+  display: block;   
+  height: 100vh;
+  position: relative; 
+  }
+
+  /* Slideshow */
+ .slideshow-img {
+  position: absolute; 
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display:none;
+}
+
+.slider-content {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  padding: 0 15%;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+.mu-slider-content h4 {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+
+}
+.mu-slider-content h2 {
+  font-size: 45px;
+  line-height: 80px;
+  margin-bottom: 10px;
+}
+.mu-slider-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+.mu-slider-content a {
+  margin-top: 25px;
+}
+/*Topnav*/
 
   #topnav-tablet {
     display: flex;
@@ -336,20 +385,9 @@ footer p {
 
   #section1 {
     background-color: var(--white);
-    height: 350px;
+    height: 400px;
     width: 100%;
     padding: 0;
-  }
-
-  #section1 img {
-    display: block;
-    width: 100%;
-    max-height: 350px;
-    background-size: cover;
-    object-fit: cover;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
   }
 
   .card {
