@@ -22,7 +22,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto; 
+  grid-template-rows: auto;
   grid-template-areas:
     "row"
     "topnav1"
@@ -46,21 +46,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  width: 97,5vw;
+  width: 97, 5vw;
   height: 30px;
-
 }
 
 #row span {
   padding-left: 10px;
 }
 
-
 #topnav {
   grid-area: top1;
   overflow: hidden;
   position: relative;
- 
 }
 
 #topnav-tablet {
@@ -70,9 +67,6 @@ body {
 #section1 {
   grid-area: sec1;
   background-color: var(--lightgrey);
-  
-  
-
 }
 
 #section2 {
@@ -114,7 +108,6 @@ a:focus {
   width: 50px;
   margin: 5px 0 10px 20px;
 }
-
 
 #topnav a,
 #topnav-tablet a {
@@ -178,7 +171,7 @@ b {
 }
 
 /* Buttons Styles */
-.slideshow-txt a{
+.slideshow-txt a {
   display: block;
   border: 1px solid white;
   width: 80px;
@@ -193,28 +186,26 @@ b {
 }
 
 #myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: var(--darkgrey); 
-  color: var(--white); 
-  cursor: pointer; 
-  padding: 10px 15px 0 15px; 
-  border-radius: 50%; 
-  font-size: 30px; 
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--darkgrey);
+  color: var(--white);
+  cursor: pointer;
+  padding: 10px 15px 0 15px;
+  border-radius: 50%;
+  font-size: 30px;
 }
-
-
 
 #sec1-mobile a {
   display: block;
   border: 1px solid var(--black);
   width: 80px;
-  padding:5px 15px;
+  padding: 5px 15px;
   border-radius: 2px;
   color: var(--balck);
   cursor: pointer;
@@ -235,40 +226,38 @@ b {
   display: block;
   margin: 0 auto;
   padding: 30px 20px;
-  max-width: 100%;
-  width: auto; 
+  width: auto;
 }
 .container-txt {
   background-color: var(--lightyellow);
   border-radius: 1%;
   margin: -40px auto 0;
-  position:relative;
+  position: relative;
   width: auto;
-  height: auto; 
+  height: auto;
   text-align: center;
-  
 }
 
 .container-txt1 {
   border: 5px solid var(--white);
   background-color: white;
   box-shadow: 
-  0 1.1px 1.1px rgba(0, 0, 0, 0.022),
-  0 2.7px 2.7px rgba(0, 0, 0, 0.032),
-  0 5px 5px rgba(0, 0, 0, 0.04),
-  0 8.9px 8.9px rgba(0, 0, 0, 0.048),
-  0 16.7px 16.7px rgba(0, 0, 0, 0.058),
-  0 40px 40px rgba(0, 0, 0, 0.08);
+    0 1.1px 1.1px rgba(0, 0, 0, 0.022),
+    0 2.7px 2.7px rgba(0, 0, 0, 0.032), 0 5px 5px rgba(0, 0, 0, 0.04),
+    0 8.9px 8.9px rgba(0, 0, 0, 0.048), 0 16.7px 16.7px rgba(0, 0, 0, 0.058),
+    0 40px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5%;
-  position:relative;
+  position: relative;
   width: auto;
-  height: auto; 
+  height: auto;
   text-align: center;
   padding: 0 20px;
 }
 
 .container-img p {
   text-align: justify;
+  display: block;
+  width: 0 auto;
 }
 
 .container-img a {
@@ -288,7 +277,6 @@ b {
   margin: 0 auto;
   object-fit: cover;
   border-radius: 50%;
- 
 }
 
 #sec3-container p,
@@ -319,7 +307,7 @@ b {
 }
 
 #aboutus {
-  margin:0 10% 0;
+  margin: 0 10% 0;
 }
 
 a {
@@ -327,9 +315,8 @@ a {
   text-decoration: none;
 }
 
-.links a{
+.links a {
   text-decoration: underline;
-
 }
 .card a {
   display: block;
@@ -357,7 +344,6 @@ a {
 .icon-instagram {
   padding: 10px;
   color: var(--darkgrey);
-  
 }
 
 footer a,
@@ -373,12 +359,11 @@ footer p {
 /* Hide tablet screen menu  */
 
 #topnav-tablet,
-.intro{
-  display:none;
+.intro {
+  display: none;
 }
 
-
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   /* Header and Menu */
   #topnav,
   #sec1-mobile {
@@ -386,67 +371,64 @@ footer p {
   }
 
   .intro {
-  display: block;   
-  height: 100%;
-  position: relative; 
+    display: block;
+    height: 100%;
+    position: relative;
   }
 
   /* Slideshow */
- .slideshow-img {
-  position: absolute; 
-  max-height: 500px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display:none;
-  filter: brightness(50%)
-}
+  .slideshow-img {
+    position: absolute;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    filter: brightness(50%);
+  }
 
+  .slideshow-txt {
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 15%;
+    display: none;
+  }
 
-.slideshow-txt {
-  color: var(--white);;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  top: 15%;
-  display:none;
-}
+  .slideshow-txt h4 {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
 
+  .slideshow-txt h4::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 75px;
+    width: 80px;
+    text-align: center;
+    border-bottom: 2px solid var(--yellow);
+  }
 
-.slideshow-txt h4 {
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  margin-top: 30px;
-}
+  .slideshow-txt h2 {
+    font-size: 45px;
+    line-height: 80px;
+    margin: 0;
+    color: var(--white);
+  }
 
-.slideshow-txt h4::after {
-  content : "";
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 75px;
-  width: 80px;
-  text-align: center;
-  border-bottom: 2px solid var(--yellow);
-}
+  .slideshow-txt p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+  }
 
-.slideshow-txt h2 {
-  font-size: 45px;
-  line-height: 80px;
-  margin: 0;
-  color: var(--white);;
-}
-
-
-.slideshow-txt p {
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  line-height: 28px;
-}
-
-/*Topnav*/
+  /*Topnav*/
 
   #topnav-tablet {
     display: flex;
@@ -454,12 +436,10 @@ footer p {
     align-items: center;
     overflow: hidden;
     width: 100vw;
-    
   }
 
   #mylinks2 a {
     width: auto;
-  
   }
 
   #mylinks2 a:last-child {
@@ -478,35 +458,28 @@ footer p {
   .card {
     width: 50%;
   }
- 
 
   #sec5-container {
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    
+    justify-content: center;
   }
 
-  .container-img {
-    max-width: 600px;
-    
-
+  .container-img p {
+    text-align: center;
   }
 
   /* Section2 */
 
   .container-txt {
-   border-radius: 5%;
-   margin: -100px 32px 0;
-
+    border-radius: 5%;
+    margin: -100px 32px 0;
   }
 
   [id*="section"] {
     padding: 3% 8%;
   }
-
 }
-
 
 @media screen and (min-width: 1200px) {
   /* Section2 */
@@ -516,11 +489,9 @@ footer p {
     flex-direction: row;
     justify-content: center;
   }
-  .container-img {
-    width: 200px; 
-    margin: 0 20px 0 0; 
-  }
-
   
-
+  .container-img p {
+    text-align: justify;
+    margin: 0 20px 0 0;
+  }
 }
